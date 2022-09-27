@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Aantekeningen pagina</title>
+</head>
+
+<body>
+  <h3>HTML introductie (section 2)</h3>
+  <ul>
+    <li>
+      <b>Commentaar</b>
+      <div>&lt;!-- Alle tekens binnen deze symbolen worden niet geïnterpreteerd in HTML --&gt;</div>
+    </li>
+    <li>
+      <b>HTML tag</b>
+      <div>bevat een name en een of meerdere attributes (te vinden op w3schools of devdocs)</div>
+    </li>
+    <li>
+      <b>Tags zonder eindtag (zie ook dicumentatie devdocs of w3schools om dit te achterhalen)</b>
+      <div>&lt;br &gt; (&lt;br /&gt;), &lt;hr &gt;&lt;img &gt;, &lt;input &gt;</div>
+    </li>
+    <li>
+      <b>bold and italic <em>(schuin)</em></b>
+      <div>Gebruik in HTML <em>&lt;em&gt; voor italic</em> en <strong>&lt; strong &gt; </strong> voor bold. Dit omdat de tags b en i alleen de stijl aanpassen, maar HTML juist structuur geeft: Dit woord of deze zin is belangrijk ten opzichte van
+        andere tekst</div>
+    </li>
+    <li>
+      <b>unordred lists</b>
+      <div>dit is een unordred list met een extra laag.</div>
+      <ul>
+        <li>hier is nog een laag door nog een &lt;ul&gt; toe te voegen binnen in een andere lijst</li>
+        <li style="list-style-type:square">met een ander symbool</li>
+        <li style="list-style-type:decimal-leading-zero"><a href="https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_list-style-type">klik hier voor meer voorbeelden van ordred lists</a></li>
+        <li style="list-style-type:decimal-leading-zero">nog een item</li>
+      </ul>
+      <ol>
+        <li>genummerde lijst</li>
+        <li>listitem 2</li>
+      </ol>
+      <ol start="50">
+        <li>Een lijst die start vanaf 50.</li>
+        <li>and on</li>
+      </ol>
+      <ol type="A" reversed>
+        <li>Een lijst die start met letters en omgekeerd (reversed), kan ook "1|a|A|i|I"zijn.</li>
+        <li>and on</li>
+      </ol>
+    </li><hr />
+    <li><img src="images\1E30348F-3DFA-4168-975B-312DA60ED219_1_201_a.jpeg" height="20%" width="20%" alt="Gezin van Alexander">img heeft in iedergeval src en alt als attribute. Alt geeft een alternatieve tekst als het plaatje niet kan geladen worden.
+      src bestand: kan bij voorkeur zijn via eigen host, maar kan ook via url.</li>
+    <li>img kan width and heigth element en nog veel meer <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">image-attributes</a> bevatten</li>
+  </ul>
+  <hr />
+  <table border="0" cellspacing="10">
+
+    <thead style="background-color: grey">
+
+      <tr>
+        <th>tabel info</th>
+        <th>head</th>
+      </tr>
+
+    </thead>
+    <tbody style="background-color: yellow">
+      <tr>
+        <td>cel1 in rij 1</td>
+        <td>cel2 in rij 1</td>
+      </tr>
+      <tr>
+        <td>cel1 in rij 2</td>
+        <td>cel 2 in rij 2</td>
+      </tr>
+    </tbody>
+    <tfoot style="background-color: green">
+      <tr>
+        <td>footer cel 1</td>
+        <td>footer cel 2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <ul>
+    <li>head, body, footer voor structuur en er later wat mee te doen zoals de head vastzetten tov de body</li>
+    <li>cellspacing vergroot de ruimte TUSSEN de cellen</li>
+  </ul>
+  <hr>
+  <h3>Formulieren</h3>
+  <form class="" action="mailto:adevalk@live.nl" method="post">
+    <label>Your Name:</label>
+    <input type="text" name="YourName">
+    <label for="">Password:</label>
+    <input type="password" name="Password" value="">
+    <input type="datetime-local" name="DateTime" value="">
+    <input type="month" name="" value="Month">
+    <input type="submit" name="" value="submit">
+  </form>
+  <a href="index.html">Ga naar HOME</a>
+</body>
+
+</html>
